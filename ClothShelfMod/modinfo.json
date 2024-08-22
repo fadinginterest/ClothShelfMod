@@ -1,0 +1,13 @@
+{
+    "type": "code",
+    "modid": "clothshelf",
+    "name": "ClothShelfMod",
+    "authors": [
+        "dweomer"
+    ],
+    "description": "A shelf for cloth based on Food Shelves by SONZ-INA",
+    "version": "0.8.0",
+    "dependencies": {
+        "game": ""
+    }
+}

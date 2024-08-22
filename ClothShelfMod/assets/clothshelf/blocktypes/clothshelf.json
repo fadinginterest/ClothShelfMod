@@ -1,0 +1,155 @@
+{
+  "code": "clothshelf",
+  "class": "ClothShelfMod.BlockClothShelf",
+  "entityclass": "ClothShelfMod.BlockEntityClothShelf",
+  "creativeinventory": {
+    "general": [ "*-east" ],
+    "decorative": [ "*-east" ],
+    "clothshelf": [ "*-east" ]
+  },
+  "variantgroups": [
+    {
+      "code": "type",
+      "states": [ "normal" ]
+    },
+    {
+      "code": "side",
+      "loadFromProperties": "game:abstract/horizontalorientation"
+    }
+  ],
+  "attributes": {
+    "handbook": {
+      "groupBy": [ "clothshelf-*" ],
+      "extraSections": [
+        {
+          "title": "clothshelfmod:blockdesc-canhold-title",
+          "text": "clothshelfmod:blockdesc-clothshelf-text"
+        }
+      ]
+    },
+    "inventoryClassName": "clothshelf",
+    "attributeTransformCode": "onClothShelfTransform"
+  },
+  "behaviors": [
+    {
+      "name": "HorizontalAttachable",
+      "properties": { "dropBlockFace": "east" }
+    }
+  ],
+  "shape": {
+    "base": "block/wood/clothshelf",
+    "rotateYByType": {
+      "*-north": 0,
+      "*-east": 270,
+      "*-west": 90,
+      "*-south": 180
+    }
+  },
+  "textures": {
+    "wood": { "base": "game:block/wood/shelf/wood" },
+    "surface": { "base": "game:block/wood/shelf/surface" },
+    "wood2":  { "base": "game:block/wood/planks/pine1"}
+  },
+  "heldTpIdleAnimation": "holdunderarm",
+  "blockmaterial": "Wood",
+  "lightAbsorption": 0,
+  "faceCullMode": "NeverCull",
+  "emitSideAo": { "all": false },
+  "sidesolid": { "all": false },
+  "sideopaque": { "all": false },
+  "replaceable": 999,
+  "resistance": 1.5,
+  "combustibleProps": {
+    "burnTemperature": 700,
+    "burnDuration": 30
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": -0.8,
+      "y": -0.68,
+      "z": -0.41
+    },
+    "rotation": {
+      "x": 99,
+      "y": -10,
+      "z": -6
+    },
+    "scale": 0.5
+  },
+  "fpHandTransform": {
+    "translation": {
+      "x": 0.08,
+      "y": -0.2,
+      "z": 0.6
+    },
+    "rotation": {
+      "x": 33,
+      "y": 134,
+      "z": -102
+    }
+  },
+  "sounds": {
+    "place": "game:block/planks",
+    "hit": "game:block/planks",
+    "break": "game:block/planks"
+  },
+  "materialDensity": 400,
+  "collisionbox": {
+    "x1": 0.125,
+    "y1": 0,
+    "z1": 0,
+    "x2": 0.875,
+    "y2": 1,
+    "z2": 1,
+    "rotateYByType": {
+      "*-north": 90,
+      "*-east": 0,
+      "*-west": 180,
+      "*-south": 270
+    }
+  },
+  "selectionBoxes": [
+    {
+      "x1": 0.125,
+      "y1": 0.0586,//0,
+      "z1": 0.0625,
+      "x2": 0.9375,
+      "y2": 0.2979,//0.3271,
+      "z2": 0.9375,
+      "rotateYByType": {
+        "*-north": 90,
+        "*-east": 0,
+        "*-west": 180,
+        "*-south": 270
+      }
+    },
+    {
+      "x1": 0.125,
+      "y1": 0.3589, //0.3125,
+      "z1": 0.0625,
+      "x2": 0.9375,
+      "y2": 0.5933, //0.625,
+      "z2": 0.9375,
+      "rotateYByType": {
+        "*-north": 90,
+        "*-east": 0,
+        "*-west": 180,
+        "*-south": 270
+      }
+    },
+    {
+      "x1": 0.125,
+      "y1": 0.6567, //0.625,
+      "z1": 0.0625,
+      "x2": 0.9375,
+      "y2": 1,
+      "z2": 0.9375,
+      "rotateYByType": {
+        "*-north": 90,
+        "*-east": 0,
+        "*-west": 180,
+        "*-south": 270
+      }
+    }
+  ]
+}
