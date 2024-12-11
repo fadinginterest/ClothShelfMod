@@ -7,7 +7,7 @@ public static class Patches {
         if (WildcardUtil.Match(ClothShelfCodes, obj.Code.Path.ToString()))
         {
             obj.EnsureAttributesNotNull();
-            obj.Attributes.Token[ClothShelf] = JToken.FromObject(true);
+            obj.Attributes.Token[ClothShelfToken] = JToken.FromObject(true);
 
             ModelTransform transformation = obj.GetTransformation(Transformations.ClothShelfTransformations);
             if (transformation != null)

@@ -12,10 +12,10 @@ public static class Restrictions {
 
     #region ClothShelf
 
-    public const string ClothShelf = "clothshelfcheck";
+    public const string ClothShelfToken = "clothshelfcheck";
 
-    public static bool ClothShelfCheck(this CollectibleObject obj) => obj?.Attributes?[ClothShelf].AsBool() == true;
-    public static bool ClothShelfCheck(this ItemSlot slot) => slot?.Itemstack?.Collectible?.Attributes?[ClothShelf].AsBool() == true;
+    public static bool ClothShelfCheck(this CollectibleObject obj) => obj?.Attributes?[ClothShelfToken].AsBool() == true;
+    public static bool ClothShelfCheck(this ItemSlot slot) => slot?.Itemstack?.Collectible?.Attributes?[ClothShelfToken].AsBool() == true;
 
     public static readonly string[] ClothShelfCodes = new string[] {
         "cloth-*"
