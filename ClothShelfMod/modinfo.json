@@ -6,7 +6,7 @@
         "Dweomer"
     ],
     "description": "A shelf for cloth based on Food Shelves by SONZ-INA",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "dependencies": {
         "game": ""
     }
